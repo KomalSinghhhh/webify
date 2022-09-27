@@ -3,6 +3,11 @@
   height: 50px;
 }
 
+.images {
+  width: 400px;
+  height: 300px;
+}
+
 .main-heading {
   font-size: 6rem;
 }
