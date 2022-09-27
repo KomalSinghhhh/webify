@@ -1,0 +1,35 @@
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.main-heading {
+  font-size: 6rem;
+}
+
+.instagram {
+  transition: color 150ms ease-in-out;
+}
+
+.instagram:hover {
+  color: hotpink;
+  cursor: pointer;
+}
+
+.coordinators > div {
+  width: calc(100% / 3.5);
+  cursor: pointer;
+  transition: all 350ms ease-in-out;
+}
+
+.coordinators > div:hover {
+  background-color: aliceblue !important;
+  box-shadow: 5px 5px 2px 1px blue !important;
+  scale: 1.1;
+}
+
+@media (max-width: 400px) {
+  .main-heading {
+    font-size: 2rem;
+  }
+}
