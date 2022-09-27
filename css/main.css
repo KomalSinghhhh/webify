@@ -23,9 +23,13 @@
 }
 
 .coordinators > div:hover {
-  background-color: aliceblue !important;
   box-shadow: 5px 5px 2px 1px blue !important;
-  scale: 1.1;
+  scale: 1.05;
+}
+
+.coordinators > div > a:hover {
+  background-color: aliceblue !important;
+  transition: background-color 500ms ease-in-out !important;
 }
 
 .header-container {
