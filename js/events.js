@@ -2,11 +2,15 @@ function controlsManager(controlsName) {
   const controls = document.querySelectorAll(
     `.${controlsName}-controls > button`
   );
+
   for (let i = 0; i < controls.length; i++) {
     controls[i].addEventListener("click", function () {
       const current = document.querySelector(
         `.${controlsName}-controls > button.btn-success`
       );
+      if (current === this) {
+        return;
+      }
       const content = this.innerText.toLowerCase();
       const newDoc = document.querySelector(`.${controlsName} #${content}`);
       newDoc.classList.remove("hide");
