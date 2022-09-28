@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap"
     />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/events.css" />
   </head>
 
   <body
@@ -60,22 +61,32 @@
             />
           </div>
           <div
-            class="col d-md-flex align-items-md-end align-items-lg-center mb-5"
+            class="col d-md-flex align-items-md-end align-items-lg-center mb-5 goc"
           >
             <div>
               <h5 class="fw-bold fs-3">Game of Codes&nbsp;</h5>
-              <div class="d-flex mb-2">
+              <div class="d-flex mb-2 goc-controls">
                 <button class="btn btn-success btn-sm me-2">About</button>
-                <button class="btn btn-sm me-2">Prices</button>
+                <button class="btn btn-sm me-2">Prizes</button>
                 <button class="btn btn-sm">Coordinators</button>
               </div>
-              <p class="text-muted mb-4">
+              <p class="text-muted mb-4 show" id="about">
                 "There are only 10 types of people in this world-Those who
                 understand binary and those who don't." <br />
                 If you think your "Happy place" is the output screen with "100%
                 test cases passed" then the opportunity is right at your door.
                 Tantransh'22 brings to you a DSA coding carnival- Game of Codes.
               </p>
+              <ol class="text-muted mb-4 hide" id="prizes">
+                <li>1st - 1100/-</li>
+                <li>2nd - 500/-</li>
+                <li>3rd - 200/-</li>
+              </ol>
+              <ol class="text-muted mb-4 hide" id="coordinators">
+                <li>Name1</li>
+                <li>Name2</li>
+                <li>Name3</li>
+              </ol>
             </div>
           </div>
         </div>
@@ -90,16 +101,16 @@
             />
           </div>
           <div
-            class="col d-md-flex align-items-md-end align-items-lg-center mb-5"
+            class="col d-md-flex align-items-md-end align-items-lg-center mb-5 webify"
           >
             <div>
               <h5 class="fw-bold fs-3">Webify&nbsp;</h5>
-              <div class="d-flex mb-2">
+              <div class="d-flex mb-2 webify-controls">
                 <button class="btn btn-success btn-sm me-2">About</button>
-                <button class="btn btn-sm me-2">Prices</button>
+                <button class="btn btn-sm me-2">Prizes</button>
                 <button class="btn btn-sm">Coordinators</button>
               </div>
-              <p class="text-muted mb-4">
+              <p class="text-muted mb-4" id="about">
                 If you think math is hard, try web design. Have a strong command
                 on website development? <br />
                 So here is a chance to showcase your skill. Tantransh presents
@@ -108,6 +119,16 @@
                 feel, impressive fonts, and a nice blend of colors is all that
                 it takes!
               </p>
+              <ol class="text-muted mb-4 hide" id="prizes">
+                <li>1100/-</li>
+                <li>500/-</li>
+                <li>200/-</li>
+              </ol>
+              <ol class="text-muted mb-4 hide" id="coordinators">
+                <li>Name1</li>
+                <li>Name2</li>
+                <li>Name3</li>
+              </ol>
             </div>
           </div>
         </div>
@@ -122,16 +143,16 @@
             />
           </div>
           <div
-            class="col d-md-flex align-items-md-end align-items-lg-center mb-5"
+            class="col d-md-flex align-items-md-end align-items-lg-center mb-5 shark"
           >
             <div>
               <h5 class="fw-bold fs-3">Shark Tank IET&nbsp;</h5>
-              <div class="d-flex mb-2">
+              <div class="d-flex mb-2 shark-controls">
                 <button class="btn btn-success btn-sm me-2">About</button>
-                <button class="btn btn-sm me-2">Prices</button>
+                <button class="btn btn-sm me-2">Prizes</button>
                 <button class="btn btn-sm">Coordinators</button>
               </div>
-              <p class="text-muted mb-4">
+              <p class="text-muted mb-4" id="about">
                 Do you ever wonder about a solution to the problem which you
                 have never got any opportunity to execute or present before
                 someone or want your entrepreneurship skill to be manifested.
@@ -140,70 +161,100 @@
                 opportunity to derive creative solutions to complex problems.
                 So, get ready with your innovative ideas.
               </p>
+              <ol class="text-muted mb-4 hide" id="prizes">
+                <li>1100/-</li>
+                <li>500/-</li>
+                <li>200/-</li>
+              </ol>
+              <ol class="text-muted mb-4 hide" id="coordinators">
+                <li>Name1</li>
+                <li>Name2</li>
+                <li>Name3</li>
+              </ol>
             </div>
           </div>
         </div>
-      </div>
-      <div
-        class="row row-cols-1 row-cols-md-2 mx-auto"
-        style="max-width: 900px"
-      >
-        <div class="col order-md-last mb-5">
-          <img
-            class="images rounded img-fluid shadow"
-            src="assets/img/technical/terror_error.png"
-          />
-        </div>
         <div
-          class="col d-md-flex align-items-md-end align-items-lg-center mb-5"
+          class="row row-cols-1 row-cols-md-2 mx-auto"
+          style="max-width: 900px"
         >
-          <div>
-            <h5 class="fw-bold fs-3">Terror in Error&nbsp;</h5>
-            <div class="d-flex mb-2">
-              <button class="btn btn-success btn-sm me-2">About</button>
-              <button class="btn btn-sm me-2">Prices</button>
-              <button class="btn btn-sm">Coordinators</button>
+          <div class="col order-md-last mb-5">
+            <img
+              class="images rounded img-fluid shadow"
+              src="assets/img/technical/terror_error.png"
+            />
+          </div>
+          <div
+            class="col d-md-flex align-items-md-end align-items-lg-center mb-5 terror"
+          >
+            <div>
+              <h5 class="fw-bold fs-3">Terror in Error&nbsp;</h5>
+              <div class="d-flex mb-2 terror-controls">
+                <button class="btn btn-success btn-sm me-2">About</button>
+                <button class="btn btn-sm me-2">Prizes</button>
+                <button class="btn btn-sm">Coordinators</button>
+              </div>
+              <p class="text-muted mb-4" id="about">
+                "A programmer - You are like semicolon to my statements; She - I
+                code in python." <br />
+                Probably, the shortest love story ;) It's time for you to smash
+                the bugs and flaunt your coding skills as we bring yet another
+                enthralling event - Terror in Error - Debug it Up! A perfect
+                combo of accuracy and speed will be the best strategy to win.
+              </p>
+              <ol class="text-muted mb-4 hide" id="prizes">
+                <li>1100/-</li>
+                <li>500/-</li>
+                <li>200/-</li>
+              </ol>
+              <ol class="text-muted mb-4 hide" id="coordinators">
+                <li>Name1</li>
+                <li>Name2</li>
+                <li>Name3</li>
+              </ol>
             </div>
-            <p class="text-muted mb-4">
-              "A programmer - You are like semicolon to my statements; She - I
-              code in python." <br />
-              Probably, the shortest love story ;) It's time for you to smash
-              the bugs and flaunt your coding skills as we bring yet another
-              enthralling event - Terror in Error - Debug it Up! A perfect combo
-              of accuracy and speed will be the best strategy to win.
-            </p>
           </div>
         </div>
-      </div>
-      <div
-        class="row row-cols-1 row-cols-md-2 mx-auto"
-        style="max-width: 900px"
-      >
-        <div class="col mb-5">
-          <img
-            class="images rounded img-fluid shadow"
-            src="assets/img/technical/tech_buzz.jpeg"
-          />
-        </div>
         <div
-          class="col d-md-flex align-items-md-end align-items-lg-center mb-5"
+          class="row row-cols-1 row-cols-md-2 mx-auto"
+          style="max-width: 900px"
         >
-          <div>
-            <h5 class="fw-bold fs-3">Tech-Buzz&nbsp;</h5>
-            <div class="d-flex mb-2">
-              <button class="btn btn-success btn-sm me-2">About</button>
-              <button class="btn btn-sm me-2">Prices</button>
-              <button class="btn btn-sm">Coordinators</button>
+          <div class="col mb-5">
+            <img
+              class="images rounded img-fluid shadow"
+              src="assets/img/technical/tech_buzz.jpeg"
+            />
+          </div>
+          <div
+            class="col d-md-flex align-items-md-end align-items-lg-center mb-5 tech-buzz"
+          >
+            <div>
+              <h5 class="fw-bold fs-3">Tech-Buzz&nbsp;</h5>
+              <div class="d-flex mb-2 tech-buzz-controls">
+                <button class="btn btn-success btn-sm me-2">About</button>
+                <button class="btn btn-sm me-2">Prizes</button>
+                <button class="btn btn-sm">Coordinators</button>
+              </div>
+              <p class="text-muted mb-4" id="about">
+                Hi coders, Netflixers, and instagrammers, considering your
+                screen-time goes mostly into these platforms, let's get your
+                brains decrypted, twisted, and ready.
+                <br />
+                To test your love for technology, Tantransh presents Tech Buzz,
+                a technology quizzing competition. Learn some, win some, and get
+                yourself to the top
+              </p>
+              <ol class="text-muted mb-4 hide" id="prizes">
+                <li>1100/-</li>
+                <li>500/-</li>
+                <li>200/-</li>
+              </ol>
+              <ol class="text-muted mb-4 hide" id="coordinators">
+                <li>Name1</li>
+                <li>Name2</li>
+                <li>Name3</li>
+              </ol>
             </div>
-            <p class="text-muted mb-4">
-              Hi coders, Netflixers, and instagrammers, considering your
-              screen-time goes mostly into these platforms, let's get your
-              brains decrypted, twisted, and ready.
-              <br />
-              To test your love for technology, Tantransh presents Tech Buzz, a
-              technology quizzing competition. Learn some, win some, and get
-              yourself to the top
-            </p>
           </div>
         </div>
       </div>
@@ -244,8 +295,7 @@
         </div>
       </div>
     </footer>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
+    <script src="js/events.js"></script>
   </body>
 </html>

@@ -1,0 +1,18 @@
+.controls > button:not(.btn-success):hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+ol > li {
+  list-style-type: none;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 10px;
+}
