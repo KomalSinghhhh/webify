@@ -7,12 +7,40 @@
   display: none;
 }
 
-.show {
+.container.py-5 > div:nth-child(even) .show {
   display: block;
+  animation: show-left 0.5s ease-in-out forwards;
+}
+
+.container.py-5 > div:nth-child(odd) .show {
+  display: block;
+  animation: show-right 0.5s ease-in-out forwards;
 }
 
 ol > li {
   list-style-type: none;
   border-bottom: 1px solid #f1f1f1;
   padding: 10px;
+}
+
+@keyframes show-right {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes show-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
