@@ -29,3 +29,4 @@ controlsManager("webify");
 controlsManager("shark");
 controlsManager("terror");
 controlsManager("tech-buzz");
+controlsManager("chess");
